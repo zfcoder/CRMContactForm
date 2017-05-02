@@ -1,0 +1,20 @@
+﻿body {
+    background-color: skyblue;
+}
+
+ul.menu
+{
+    margin: 0; /* Обнуляем значение отступов */
+    padding: 4px; /* Значение полей */
+}
+
+ul.menu li
+{
+    display: inline; /* Отображать как строчный элемент */
+    margin-right: 5px; /* Отступ слева */
+    padding: 12px; /* Поля вокруг текста */
+}
+
+ul.menu li:hover {
+    background-color: #d2f3f3;
+}

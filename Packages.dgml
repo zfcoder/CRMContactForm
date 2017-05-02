@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph GraphDirection="LeftToRight" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="CRMContactForm" Label="CRMContactForm" Category="Проект" />
+    <Node Id="EntityFramework 5.0.0" Label="EntityFramework 5.0.0" Category="Пакет" />
+    <Node Id="EntityFramework.ru 5.0.0" Label="EntityFramework.ru 5.0.0" Category="Пакет" />
+    <Node Id="Microsoft.AspNet.Mvc 4.0.20710.0" Label="Microsoft.AspNet.Mvc 4.0.20710.0" Category="Пакет" />
+    <Node Id="Microsoft.AspNet.Mvc.ru 4.0.20710.0" Label="Microsoft.AspNet.Mvc.ru 4.0.20710.0" Category="Пакет" />
+    <Node Id="Microsoft.AspNet.Razor 2.0.20710.0" Label="Microsoft.AspNet.Razor 2.0.20710.0" Category="Пакет" />
+    <Node Id="Microsoft.AspNet.Razor.ru 2.0.20710.0" Label="Microsoft.AspNet.Razor.ru 2.0.20710.0" Category="Пакет" />
+    <Node Id="Microsoft.AspNet.WebApi 4.0.20710.0" Label="Microsoft.AspNet.WebApi 4.0.20710.0" Category="Пакет" />
+    <Node Id="Microsoft.AspNet.WebApi.Client 4.0.20710.0" Label="Microsoft.AspNet.WebApi.Client 4.0.20710.0" Category="Пакет" />
+    <Node Id="Microsoft.AspNet.WebApi.Client.ru 4.0.20710.0" Label="Microsoft.AspNet.WebApi.Client.ru 4.0.20710.0" Category="Пакет" />
+    <Node Id="Microsoft.AspNet.WebApi.Core 4.0.20710.0" Label="Microsoft.AspNet.WebApi.Core 4.0.20710.0" Category="Пакет" />
+    <Node Id="Microsoft.AspNet.WebApi.Core.ru 4.0.20710.0" Label="Microsoft.AspNet.WebApi.Core.ru 4.0.20710.0" Category="Пакет" />
+    <Node Id="Microsoft.AspNet.WebApi.WebHost 4.0.20710.0" Label="Microsoft.AspNet.WebApi.WebHost 4.0.20710.0" Category="Пакет" />
+    <Node Id="Microsoft.AspNet.WebApi.WebHost.ru 4.0.20710.0" Label="Microsoft.AspNet.WebApi.WebHost.ru 4.0.20710.0" Category="Пакет" />
+    <Node Id="Microsoft.AspNet.WebPages 2.0.20710.0" Label="Microsoft.AspNet.WebPages 2.0.20710.0" Category="Пакет" />
+    <Node Id="Microsoft.AspNet.WebPages.ru 2.0.20710.0" Label="Microsoft.AspNet.WebPages.ru 2.0.20710.0" Category="Пакет" />
+    <Node Id="Microsoft.CrmSdk.CoreAssemblies 6.0.4" Label="Microsoft.CrmSdk.CoreAssemblies 6.0.4" Category="Пакет" />
+    <Node Id="Microsoft.CrmSdk.Deployment 6.0.4" Label="Microsoft.CrmSdk.Deployment 6.0.4" Category="Пакет" />
+    <Node Id="Microsoft.CrmSdk.Extensions 6.0.4.1" Label="Microsoft.CrmSdk.Extensions 6.0.4.1" Category="Пакет" />
+    <Node Id="Microsoft.IdentityModel 6.1.7600.16394" Label="Microsoft.IdentityModel 6.1.7600.16394" Category="Пакет" />
+    <Node Id="Microsoft.Net.Http 2.0.20710.0" Label="Microsoft.Net.Http 2.0.20710.0" Category="Пакет" />
+    <Node Id="Microsoft.Net.Http.ru 2.0.20710.0" Label="Microsoft.Net.Http.ru 2.0.20710.0" Category="Пакет" />
+    <Node Id="Microsoft.Web.Infrastructure 1.0.0.0" Label="Microsoft.Web.Infrastructure 1.0.0.0" Category="Пакет" />
+    <Node Id="Microsoft.WindowsAzure.ConfigurationManager 2.0.3" Label="Microsoft.WindowsAzure.ConfigurationManager 2.0.3" Category="Пакет" />
+    <Node Id="Newtonsoft.Json 4.5.6" Label="Newtonsoft.Json 4.5.6" Category="Пакет" />
+    <Node Id="WindowsAzure.ServiceBus 2.1.4.0" Label="WindowsAzure.ServiceBus 2.1.4.0" Category="Пакет" />
+  </Nodes>
+  <Links>
+    <Link Source="EntityFramework.ru 5.0.0" Target="EntityFramework 5.0.0" Category="Зависимость пакета" />
+    <Link Source="Microsoft.AspNet.Mvc 4.0.20710.0" Target="Microsoft.AspNet.WebPages 2.0.20710.0" Category="Зависимость пакета" />
+    <Link Source="Microsoft.AspNet.Mvc 4.0.20710.0" Target="Microsoft.AspNet.Razor 2.0.20710.0" Category="Зависимость пакета" />
+    <Link Source="Microsoft.AspNet.Mvc.ru 4.0.20710.0" Target="Microsoft.AspNet.Mvc 4.0.20710.0" Category="Зависимость пакета" />
+    <Link Source="Microsoft.AspNet.Razor.ru 2.0.20710.0" Target="Microsoft.AspNet.Razor 2.0.20710.0" Category="Зависимость пакета" />
+    <Link Source="Microsoft.AspNet.WebApi 4.0.20710.0" Target="Microsoft.AspNet.WebApi.WebHost 4.0.20710.0" Category="Зависимость пакета" />
+    <Link Source="Microsoft.AspNet.WebApi.Client 4.0.20710.0" Target="Microsoft.Net.Http 2.0.20710.0" Category="Зависимость пакета" />
+    <Link Source="Microsoft.AspNet.WebApi.Client 4.0.20710.0" Target="Newtonsoft.Json 4.5.6" Category="Зависимость пакета" />
+    <Link Source="Microsoft.AspNet.WebApi.Client.ru 4.0.20710.0" Target="Microsoft.AspNet.WebApi.Client 4.0.20710.0" Category="Зависимость пакета" />
+    <Link Source="Microsoft.AspNet.WebApi.Core 4.0.20710.0" Target="Microsoft.AspNet.WebApi.Client 4.0.20710.0" Category="Зависимость пакета" />
+    <Link Source="Microsoft.AspNet.WebApi.Core.ru 4.0.20710.0" Target="Microsoft.AspNet.WebApi.Core 4.0.20710.0" Category="Зависимость пакета" />
+    <Link Source="Microsoft.AspNet.WebApi.WebHost 4.0.20710.0" Target="Microsoft.Web.Infrastructure 1.0.0.0" Category="Зависимость пакета" />
+    <Link Source="Microsoft.AspNet.WebApi.WebHost 4.0.20710.0" Target="Microsoft.AspNet.WebApi.Core 4.0.20710.0" Category="Зависимость пакета" />
+    <Link Source="Microsoft.AspNet.WebApi.WebHost.ru 4.0.20710.0" Target="Microsoft.AspNet.WebApi.WebHost 4.0.20710.0" Category="Зависимость пакета" />
+    <Link Source="Microsoft.AspNet.WebPages 2.0.20710.0" Target="Microsoft.Web.Infrastructure 1.0.0.0" Category="Зависимость пакета" />
+    <Link Source="Microsoft.AspNet.WebPages 2.0.20710.0" Target="Microsoft.AspNet.Razor 2.0.20710.0" Category="Зависимость пакета" />
+    <Link Source="Microsoft.AspNet.WebPages.ru 2.0.20710.0" Target="Microsoft.AspNet.WebPages 2.0.20710.0" Category="Зависимость пакета" />
+    <Link Source="Microsoft.CrmSdk.CoreAssemblies 6.0.4" Target="Microsoft.IdentityModel 6.1.7600.16394" Category="Зависимость пакета" />
+    <Link Source="Microsoft.CrmSdk.Deployment 6.0.4" Target="Microsoft.CrmSdk.CoreAssemblies 6.0.4" Category="Зависимость пакета" />
+    <Link Source="Microsoft.CrmSdk.Extensions 6.0.4.1" Target="WindowsAzure.ServiceBus 2.1.4.0" Category="Зависимость пакета" />
+    <Link Source="Microsoft.CrmSdk.Extensions 6.0.4.1" Target="Microsoft.CrmSdk.CoreAssemblies 6.0.4" Category="Зависимость пакета" />
+    <Link Source="Microsoft.CrmSdk.Extensions 6.0.4.1" Target="Microsoft.CrmSdk.Deployment 6.0.4" Category="Зависимость пакета" />
+    <Link Source="Microsoft.Net.Http.ru 2.0.20710.0" Target="Microsoft.Net.Http 2.0.20710.0" Category="Зависимость пакета" />
+    <Link Source="WindowsAzure.ServiceBus 2.1.4.0" Target="Microsoft.WindowsAzure.ConfigurationManager 2.0.3" Category="Зависимость пакета" />
+    <Link Source="CRMContactForm" Target="EntityFramework.ru 5.0.0" Category="Установленный пакет" />
+    <Link Source="CRMContactForm" Target="Microsoft.AspNet.Mvc.ru 4.0.20710.0" Category="Установленный пакет" />
+    <Link Source="CRMContactForm" Target="Microsoft.AspNet.Razor.ru 2.0.20710.0" Category="Установленный пакет" />
+    <Link Source="CRMContactForm" Target="Microsoft.AspNet.WebApi 4.0.20710.0" Category="Установленный пакет" />
+    <Link Source="CRMContactForm" Target="Microsoft.AspNet.WebApi.Client.ru 4.0.20710.0" Category="Установленный пакет" />
+    <Link Source="CRMContactForm" Target="Microsoft.AspNet.WebApi.Core.ru 4.0.20710.0" Category="Установленный пакет" />
+    <Link Source="CRMContactForm" Target="Microsoft.AspNet.WebApi.WebHost.ru 4.0.20710.0" Category="Установленный пакет" />
+    <Link Source="CRMContactForm" Target="Microsoft.AspNet.WebPages.ru 2.0.20710.0" Category="Установленный пакет" />
+    <Link Source="CRMContactForm" Target="Microsoft.CrmSdk.Extensions 6.0.4.1" Category="Установленный пакет" />
+    <Link Source="CRMContactForm" Target="Microsoft.Net.Http.ru 2.0.20710.0" Category="Установленный пакет" />
+  </Links>
+  <Categories>
+    <Category Id="Проект" />
+    <Category Id="Пакет" />
+  </Categories>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="Проект" ValueLabel="True">
+      <Condition Expression="HasCategory('Проект')" />
+      <Setter Property="Background" Value="Blue" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Зависимость пакета" ValueLabel="True">
+      <Condition Expression="HasCategory('Зависимость пакета')" />
+      <Setter Property="Background" Value="Yellow" />
+    </Style>
+  </Styles>
+</DirectedGraph>

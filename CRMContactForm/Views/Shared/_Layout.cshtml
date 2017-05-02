@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/css/contact.css" rel="stylesheet" />
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title</title>
+    <link href="@Url.Content("~/Content/css/site.css")" rel="stylesheet" type="text/css" />
+</head>
+ 
+<body>
+    <script src="~/Scripts/jquery-1.7.1.min.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+<nav>
+    <ul class="menu">
+        <li>@Html.ActionLink("Главная", "Index", "Contact")</li>
+        <li>@Html.ActionLink("О проекте", "Index", "About")</li>
+    </ul>
+</nav>
+<br/>
+
+@RenderBody()
+</body>
+</html>

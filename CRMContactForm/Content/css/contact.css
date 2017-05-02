@@ -1,0 +1,51 @@
+﻿body {
+    font-family: Arial;
+}
+
+input[name="savebutton"] {
+    background: url(../img/save_20.png) 8px 6px no-repeat;
+    display: block;
+    width: 110px;
+    height: 35px;
+    text-align: right;
+    -ms-background-size: 20px;
+    background-size: 20px;
+    border: 1px solid azure;
+    background-color: azure;
+}
+
+input[name="savebutton"]:hover {
+    background-color: #0097d6;
+    color: white;
+}
+
+.createcontactform {
+    width: 300px;
+    background-color: azure;
+}
+
+.createcontactform legend {
+    font-size: 16pt;
+    color: gray;
+}
+
+.createcontactform .editor-field input {
+    min-width: 254px;
+    padding: 5px 5px 5px 5px;
+    background-color: #e5e5e5;
+    font-family: "Arial";
+    font-size: 12pt;
+    color: #6b6b6b;
+}
+
+.createcontactform .editor-label{
+    margin-top: 10px;
+    color: gray;
+}
+
+.field-validation-error {
+    color: red;
+    font-size: 12px;
+}
+
+
