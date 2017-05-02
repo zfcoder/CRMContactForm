@@ -12,7 +12,7 @@ namespace CRMContactForm
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "ContactController", action = "Index", id = UrlParameter.Optional }
+                defaults: new { controller = "Contact", action = "Index", id = UrlParameter.Optional }
             );
         }
     }
