@@ -48,4 +48,8 @@ input[name="savebutton"]:hover {
     font-size: 12px;
 }
 
+.createcontactform .successmessage {
+    color: green;
+}
+
 

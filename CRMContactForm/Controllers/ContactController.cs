@@ -13,8 +13,9 @@ namespace CRMContactForm.Controllers
         /// Основной контроллер.
         /// </summary>
         /// <returns>Представление.</returns>
-        public ActionResult Index()
+        public ActionResult Index(string result)
         {
+            ViewBag.result = result;
             return View(new ContactEntityModel());
         }
 
@@ -26,13 +27,14 @@ namespace CRMContactForm.Controllers
         [HttpPost]
         [HandleError()]
         public ActionResult Index([Bind(Include =
-"ContactName, MobilePhone, BirthDay, JobTitle,Email")] ContactEntityModel contactModel)
+"ContactFirstName, ContactLastName, MobilePhone, BirthDay, JobTitle,Email")] ContactEntityModel contactModel)
         {
             if (ModelState.IsValid)
             {
                 var contactHelper = new DalContactEntity();
-
                 contactHelper.AddContactToCrm(contactModel);
+                var resultmessage = string.Format("Контакт \"{0} {1}\" сохранен.", contactModel.ContactFirstName, contactModel.ContactLastName);
+                return RedirectToAction("Index", new { result = resultmessage });
             }
             return View(contactModel);
         }

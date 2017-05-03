@@ -15,11 +15,18 @@ namespace CRMContactForm.Models
         public Guid ContactId { get; set; }
 
         /// <summary>
-        /// Полное имя контакта. Обязательное поле.
+        /// Имя контакта. Обязательное поле.
         /// </summary>
         [Required(AllowEmptyStrings = false)]
-        [DisplayName("Полное имя")]
-        public string ContactName { get; set; }
+        [DisplayName("Имя")]
+        public string ContactFirstName { get; set; }
+
+        /// <summary>
+        /// Фамилия контакта. Обязательное поле.
+        /// </summary>
+        [Required(AllowEmptyStrings = false)]
+        [DisplayName("Фамилия")]
+        public string ContactLastName { get; set; }
 
         /// <summary>
         /// Телефон контакта.

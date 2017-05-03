@@ -5,7 +5,7 @@
     ViewBag.Title = "Главная";
 }
     
-    @using (Html.BeginForm("Index", "Contact", FormMethod.Post, new { @class = "createcontactform" }))
+@using (Html.BeginForm("Index", "Contact", FormMethod.Post, new { @class = "createcontactform" }))
     {
         @Html.ValidationSummary(true)
     
@@ -13,13 +13,21 @@
             <legend>Создание нового контакта</legend>
             <br/>
             <div class="editor-label">
-                @Html.LabelFor(model => model.ContactName)
+                @Html.LabelFor(model => model.ContactFirstName)
             </div>
             <div class="editor-field">
-                @Html.EditorFor(model => model.ContactName)
-                @Html.ValidationMessageFor(model => model.ContactName)
+                @Html.TextBoxFor(model => model.ContactFirstName)
+                @Html.ValidationMessageFor(model => model.ContactFirstName)
             </div>
     
+            <div class="editor-label">
+                @Html.LabelFor(model => model.ContactLastName)
+            </div>
+            <div class="editor-field">
+                @Html.TextBoxFor(model => model.ContactLastName)
+                @Html.ValidationMessageFor(model => model.ContactLastName)
+            </div>
+
             <div class="editor-label">
                 @Html.LabelFor(model => model.MobilePhone)
             </div>
@@ -55,6 +63,9 @@
             <p>
                 <input type="submit" value="Сохранить" name="savebutton"/>
             </p>
+            <p class="successmessage">
+                @ViewBag.result
+            <p/>
         </fieldset>
     }
     

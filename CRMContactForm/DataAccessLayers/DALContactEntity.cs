@@ -36,7 +36,8 @@ namespace CRMContactForm.DataAccessLayers
             // Создаем новую запись.
             var newContact = new contact
             {
-                fullname = contactModel.ContactName,
+                firstname = contactModel.ContactFirstName,
+                lastname = contactModel.ContactLastName,
                 mobilephone = contactModel.MobilePhone,
                 emailaddress1 = contactModel.Email,
                 jobtitle = contactModel.JobTitle
